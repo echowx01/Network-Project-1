@@ -109,8 +109,8 @@ SSH into the control node and follow the steps below:
 
 TODO: Answer the following questions to fill in the blanks:_
 - Which file is the playbook? Where do you copy it?
-filebeat_config.yml and it should be copied to the /etc/ansible/roles/files/ directory 
+ filebeat_config.yml and it should be copied to the /etc/ansible/roles/files/ directory 
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-The file that is needed to update to make Ansible run the playbook on the specific machine is the filebeat_config.yml which is a config file that will be put into the Elk VM during the run of the ansible-playbook. When you update the host.cfg in the ansible directory, you will need to create a new group called [elkserver]. When configuring the filebeat.yml file, you'll need to designate the Private IP of the Elk-Server.
+ The file that is needed to update to make Ansible run the playbook on the specific machine is the filebeat_config.yml which is a config file that will be put into the Elk VM during the run of the ansible-playbook. When you update the host.cfg in the ansible directory, you will need to create a new group called [elkserver]. When configuring the filebeat.yml file, you'll need to designate the Private IP of the Elk-Server.
 - Which URL do you navigate to in order to check that the ELK server is running?
-The URL to use to verify the Elk Vm is running is the [Public IP:5601]
+ The URL to use to verify the Elk Vm is running is the [Public IP:5601]
